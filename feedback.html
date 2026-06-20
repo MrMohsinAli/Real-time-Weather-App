@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atmos - Feedback</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo/favi.png" sizes="192x192" type="image/png">
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            background: url('https://source.unsplash.com/1600x900/?sky,clouds') no-repeat center center/cover;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        .nav-bar {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .nav-bar a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #8e44ad;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .nav-bar a:hover {
+            color: #920efff8;
+        }
+
+        .feedback-container {
+            background: rgba(245, 244, 244, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            width: 375px;
+            max-width: 750px;
+            margin: 100px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        img.logo {
+    position: absolute;
+    bottom: 902px;
+    left: 1px;
+    height: 270px;
+    width: 270px;
+    z-index: 1;
+}
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input, textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+
+        button {
+            background: linear-gradient(135deg, #2980b9, #8e44ad);
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: linear-gradient(135deg, #8e44ad, #2980b9);
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 10px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            font-weight: lighter;
+        }
+
+        footer h4 {
+            font-size: 1rem;
+            color: #363636;
+            line-height: 1.6;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <a href="terms.html">Terms of Use</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="https://www.reuters.com/world/weather/" target="_blank">Newsroom</a>
+    </div>
+
+    <div class="feedback-container">
+        <a href="index.html"><img src="logo/Logo.png" alt="Atmos" class="logo"></a>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Feedback" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <footer>
+        <h4>&#174; 2025 Atmos. All rights reserved.</h4>
+    </footer>
+</body>
+</html>

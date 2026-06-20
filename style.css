@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    background: url('https://source.unsplash.com/1600x900/?sky,clouds') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    background-color: black;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 2rem;
+    border-radius: 20px;
+    width: 350px;
+    max-width: 550px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    color: rgb(0, 0, 0);
+}
+.page-wrapper {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    position: absolute;
+    top: 12px;
+    right: 955px;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+img.logo {
+    position: absolute;
+    bottom: 902px;
+    left: 1px;
+    height: 270px;
+    width: 270px;
+    z-index: 1;
+}
+
+.search-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.search-box input {
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.4);
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    outline: none;
+}
+.search-box button {
+    background: linear-gradient(135deg, #2980b9, #8e44ad);;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.search-box button:hover {
+    background: linear-gradient(135deg, #8e44ad, #2980b9);
+    transform: scale(1.05);
+}
+.weather-info {
+    background: rgb(100, 100, 100);
+    padding: 1.5rem;
+    border-radius: 15px;
+    margin-top: 20px;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    display: none;
+}
+.weather-info p {
+    font-size: 18px;
+    margin: 8px 0;
+    font-weight: bold;
+    color: rgb(100, 100, 100);
+}
+.weather-info p b {
+    color: rgb(0, 0, 0); 
+}
+#weatherDescription {
+    color: rgb(0, 0, 0);
+}
+.weather-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.weather-info p {
+    font-size: 18px;
+    margin: 5px 0;
+    font-weight: bolder;
+}
+.icon {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+@media (max-width: 480px) {
+    .container 
+    {
+        width: 95%;
+    }
+}
+body {
+    transition: background-image 0.5s ease-in-out;
+}
+
+.weather-background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    z-index: -1;
+}
+
+.container {
+    position: relative;
+}
+
+.weather-info {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.weather-info {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.5s ease-out forwards;
+    display: none;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .weather-background-video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .weather-background-video {
+        width: auto;
+        height: 100%;
+    }
+}
+.nav-bar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.nav-bar a {
+    margin: 0 10px;
+    text-decoration: none;
+    color:  #8e44ad;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-bar a:hover {
+    color: #920efff8;
+}
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-weight: lighter;
+}
+h4 {
+    font-size: 1rem;
+    color: #363636;
+    line-height: 1.6;
+}

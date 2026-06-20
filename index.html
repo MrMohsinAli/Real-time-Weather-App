@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atmos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo/favi.png" sizes="192x192" type="image/png">
+</head>
+<body>
+    <div class="page-wrapper">
+        <a href="index.html"><img src="logo/Logo.png" alt="Atmos" class="logo"></a>
+        <div class="container">
+            <div class="search-box">
+                <input type="text" id="city" placeholder="Enter City">
+                <input type="text" id="country" placeholder="Enter Country">
+                <button onclick="getWeather()">Search</button>
+            </div>
+            
+            <div class="weather-info">
+                <h2 id="location"></h2>
+                <p id="temperature"></p>
+                <p id="weatherDescription"></p>
+                <p id="feelsLike"></p>
+                <p id="humidity"></p>      
+            </div>
+        </div>
+    </div>
+    <div class="nav-bar">
+        <a href="terms.html">Terms of Use</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="https://www.reuters.com/world/weather/" target="_blank">Newsroom</a>
+        
+    </div>
+    <script src="script.js"></script>
+    <footer>
+        <h4><p>&#174; 2025 Atmos. All rights reserved.</p></h4>
+    </footer>
+    
+</body>
+</html>
